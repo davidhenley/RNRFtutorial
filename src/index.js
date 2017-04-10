@@ -1,5 +1,8 @@
-import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React from 'react';
+import { Router, Scene } from 'react-native-router-flux';
+
+import ScarletScreen from './ScarletScreen';
+import GrayScreen from './GrayScreen';
 
 const styles = StyleSheet.create({
   container: {
@@ -13,13 +16,12 @@ const styles = StyleSheet.create({
   }
 });
 
-export default class App extends Component {
-  render() {
-    const { container, welcome } = styles;
-    return (
-      <View style={container}>
-        <Text style={welcome}>Hello</Text>
-      </View>
-    );
-  }
-}
+const App = () => {
+  <Router>
+    <Scene key="root">
+      
+    </Scene>
+  </Router>
+};
+
+export default App;
