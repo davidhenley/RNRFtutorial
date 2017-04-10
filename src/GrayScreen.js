@@ -23,7 +23,7 @@ const GrayScreen = () => {
   const { container, welcome } = styles;
   return (
     <View style={container}>
-      <Text style={welcome}>
+      <Text style={welcome} onPress={() => Actions.scarlet()}>
         Gray Screen
       </Text>
     </View>
