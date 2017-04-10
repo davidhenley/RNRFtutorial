@@ -8,6 +8,7 @@ import BlueScreen from './BlueScreen';
 import MaizeScreen from './MaizeScreen';
 import BlackScreen from './BlackScreen';
 import GoldScreen from './GoldScreen';
+import ModalScreen from './ModalScreen';
 
 const TabIcon = ({ selected, title }) => {
   return (
@@ -35,6 +36,8 @@ const App = () => {
             <Scene key="gold" component={GoldScreen} title="Gold" />
           </Scene>
         </Scene>
+
+        <Scene key="modal" component={ModalScreen} title="Modal" direction="vertical" hideNavBar />
       </Scene>
     </Router>
   );

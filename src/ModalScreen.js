@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#bb0000'
+    backgroundColor: '#FF8200'
   },
   welcome: {
     fontSize: 20,
@@ -19,19 +19,15 @@ const styles = StyleSheet.create({
   }
 });
 
-const ScarletScreen = () => {
+const Modal = () => {
   const { container, welcome } = styles;
   return (
     <View style={container}>
-      <Text style={welcome} onPress={() => Actions.gray()}>
-        Scarlet Screen
-      </Text>
-
-      <Text style={welcome} onPress={() => Actions.modal()}>
-        Modal Screen
+      <Text style={welcome} onPress={() => Actions.pop()}>
+        Modal
       </Text>
     </View>
   );
 };
 
-export default ScarletScreen;
+export default Modal;
